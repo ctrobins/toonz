@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import Login from './Login.js'
 import logo from './logo.svg';
 import './App.css';
 import axios from 'axios';
+import { BrowserRouter, Route, Link } from 'react-router-dom';
 
 class App extends Component {
   constructor(props) {
@@ -13,19 +15,20 @@ class App extends Component {
 
   componentDidMount() {
     axios.get(`/api/data`)
-    .then(({data}) => {
-      this.setState({string: data});
-    })
+    .then(res => res.data.string) 
+    .then(string => this.setState({ string }));
   }
 
   render() {
     return (
+      <BrowserRouter>
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
             {this.state.string}
           </p>
+          <Route path="/login" component={Login}/>
           <a
             className="App-link"
             href="https://reactjs.org"
@@ -36,6 +39,7 @@ class App extends Component {
           </a>
         </header>
       </div>
+      </BrowserRouter>
     );
   }
 }
