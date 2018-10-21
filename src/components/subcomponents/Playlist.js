@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import dummyTracks from '../dummyData/savedTracks.json';
+import dummyTracks from '../../dummyData/savedTracks.json';
 
 class Playlist extends Component {
     constructor(props) {
