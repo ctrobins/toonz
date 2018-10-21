@@ -1,4 +1,4 @@
-from flask import Flask, session, request, redirect, render_template
+from flask import Flask, session, jsonify, request, redirect, render_template
 import spotipy
 import spotipy.oauth2 as oauth2
 import spotipy.util as util
@@ -14,15 +14,25 @@ REDIRECT_URI='http://localhost:5000/callback/'
 def react_app():
     return render_template('index.html')
 
-@app.route('/api/data')
-def data():
-   return 'hello'
+@app.route('/api/savedtracks')
+def saved_tracks():
+    sp = spotipy.Spotify(session.get('token'))
+    return jsonify(sp.current_user_saved_tracks())
+
+@app.route('/api/playlists')
+def playlists():
+    sp = spotipy.Spotify(session.get('token'))
+    return jsonify(sp.current_user_playlists())
+
+@app.route('/api/userinfo')
+def user_info():
+    sp = spotipy.Spotify(session.get('token'))
+    return jsonify(sp.current_user())
 
 @app.route('/callback/')
 def callback():
-    url = request.url
     sp_oauth = oauth2.SpotifyOAuth(CLIENT_ID, CLIENT_SECRET, REDIRECT_URI, SCOPE)
-    code = sp_oauth.parse_response_code(url)
+    code = sp_oauth.parse_response_code(request.url)
     token_info = sp_oauth.get_access_token(code)
     session['token'] = token_info['access_token']
     return redirect("/", code=302)
@@ -52,22 +62,13 @@ def login_screen():
 def signup_screen():
     return react_app()
 
+# Only let users access the main page if they are authenticated
 @app.route('/')
 def check_auth():
-        #session.clear()
-        for el in session:
-                print(el)
-        if 'token' not in session:
-                return redirect("/login", code=302)
-        else:
-                print('TOKEN', session.get('token'))
-                sp = spotipy.Spotify(session.get('token'))
-                sp.trace = False
-                results = sp.current_user_saved_tracks()
-                for item in results['items']:
-                        track = item['track']
-                        print track['name'] + ' - ' + track['artists'][0]['name']
-                return react_app()
+    if 'token' not in session:
+        return redirect("/login", code=302)
+    else:
+        return react_app()
 
 # Default case to rereoute other URLs to React Router
 @app.route('/<path>')

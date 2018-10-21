@@ -1,0 +1,205 @@
+{
+    "href": "https://api.spotify.com/v1/users/12142278403/playlists?offset=0&limit=50",
+    "items": [
+        {
+            "collaborative": false,
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/2fPmbhSmNn0cqBlQVllKN0"
+            },
+            "href": "https://api.spotify.com/v1/playlists/2fPmbhSmNn0cqBlQVllKN0",
+            "id": "2fPmbhSmNn0cqBlQVllKN0",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://mosaic.scdn.co/640/10fe03b16911c69a2a6186b8096603d6e19166265257b54643e195adcb7417666a3b79ece170105198584e25bb1dda4dcfde15b00a8b5b4bd13192d9f56f23cbd3783f8594a4871ca0424ffb9de7a5cd",
+                    "width": 640
+                },
+                {
+                    "height": 300,
+                    "url": "https://mosaic.scdn.co/300/10fe03b16911c69a2a6186b8096603d6e19166265257b54643e195adcb7417666a3b79ece170105198584e25bb1dda4dcfde15b00a8b5b4bd13192d9f56f23cbd3783f8594a4871ca0424ffb9de7a5cd",
+                    "width": 300
+                },
+                {
+                    "height": 60,
+                    "url": "https://mosaic.scdn.co/60/10fe03b16911c69a2a6186b8096603d6e19166265257b54643e195adcb7417666a3b79ece170105198584e25bb1dda4dcfde15b00a8b5b4bd13192d9f56f23cbd3783f8594a4871ca0424ffb9de7a5cd",
+                    "width": 60
+                }
+            ],
+            "name": "Who Charted? Kevin's Hot Picks",
+            "owner": {
+                "display_name": "Magdalen Silberman",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/magdalen.silberman"
+                },
+                "href": "https://api.spotify.com/v1/users/magdalen.silberman",
+                "id": "magdalen.silberman",
+                "type": "user",
+                "uri": "spotify:user:magdalen.silberman"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "MjIsYzU1ZDFkNzJmMzllYjEwZmNlNzExNmJjNjcxMmQzMDc5MDc4ZGIwMA==",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/2fPmbhSmNn0cqBlQVllKN0/tracks",
+                "total": 75
+            },
+            "type": "playlist",
+            "uri": "spotify:user:magdalen.silberman:playlist:2fPmbhSmNn0cqBlQVllKN0"
+        },
+        {
+            "collaborative": false,
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/37i9dQZEVXcTY6Q6bYkkBL"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZEVXcTY6Q6bYkkBL",
+            "id": "37i9dQZEVXcTY6Q6bYkkBL",
+            "images": [
+                {
+                    "height": null,
+                    "url": "https://pl.scdn.co/images/pl/default/905cdc3d0de94c57707d98ecb3d5adafd3e45f42",
+                    "width": null
+                }
+            ],
+            "name": "Discover Weekly",
+            "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/spotify"
+                },
+                "href": "https://api.spotify.com/v1/users/spotify",
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "MjU2NTkzNjAsMDAwMDAwMDAyODAwYzNkMTZmNzYzOWMzYWE5ZDA4MmEwNTMxNzRmOQ==",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/37i9dQZEVXcTY6Q6bYkkBL/tracks",
+                "total": 30
+            },
+            "type": "playlist",
+            "uri": "spotify:user:spotify:playlist:37i9dQZEVXcTY6Q6bYkkBL"
+        },
+        {
+            "collaborative": false,
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/3kJpVyB623V6pqK9uv0xzX"
+            },
+            "href": "https://api.spotify.com/v1/playlists/3kJpVyB623V6pqK9uv0xzX",
+            "id": "3kJpVyB623V6pqK9uv0xzX",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/950afe116e839c4551eae15ca5027b0410d351d5",
+                    "width": 640
+                }
+            ],
+            "name": "Claude Debussy — Debussy: The Composer as Pianist (1904, 1913)",
+            "owner": {
+                "display_name": "Carter Robinson",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/12142278403"
+                },
+                "href": "https://api.spotify.com/v1/users/12142278403",
+                "id": "12142278403",
+                "type": "user",
+                "uri": "spotify:user:12142278403"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "Myw1ZDc5MmJmZGMzN2UxMjA0NDI5YzlkOGIwMmRiMGYyODFjMTZkZmVl",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/3kJpVyB623V6pqK9uv0xzX/tracks",
+                "total": 18
+            },
+            "type": "playlist",
+            "uri": "spotify:user:12142278403:playlist:3kJpVyB623V6pqK9uv0xzX"
+        },
+        {
+            "collaborative": false,
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/4SrCJyzuyOlHzsRde2pE8a"
+            },
+            "href": "https://api.spotify.com/v1/playlists/4SrCJyzuyOlHzsRde2pE8a",
+            "id": "4SrCJyzuyOlHzsRde2pE8a",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/7a660eb4402b8e061957c916be6fa30efafaa74c",
+                    "width": 640
+                }
+            ],
+            "name": "Liked from Radio",
+            "owner": {
+                "display_name": "Carter Robinson",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/12142278403"
+                },
+                "href": "https://api.spotify.com/v1/users/12142278403",
+                "id": "12142278403",
+                "type": "user",
+                "uri": "spotify:user:12142278403"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NCw4NDk5NDFmM2IzYmIwMDlhZGVlNTg4ZTcwZDY0NjhlNWRkOTRjYmFh",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/4SrCJyzuyOlHzsRde2pE8a/tracks",
+                "total": 2
+            },
+            "type": "playlist",
+            "uri": "spotify:user:12142278403:playlist:4SrCJyzuyOlHzsRde2pE8a"
+        },
+        {
+            "collaborative": false,
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/71TGs0TQDL7bPhhSgQ5Oc0"
+            },
+            "href": "https://api.spotify.com/v1/playlists/71TGs0TQDL7bPhhSgQ5Oc0",
+            "id": "71TGs0TQDL7bPhhSgQ5Oc0",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://mosaic.scdn.co/640/4f5ac6238a95971af895e78a2edfbfd25529c06e6a2bffbb188a7881b1e52ab46fea5bb78c5125f6702f2df495f45ac85a6513e90dc2e91247aee6f1d75fc8f64e83a4a5585bfb97fd6db51a943bdbf8",
+                    "width": 640
+                },
+                {
+                    "height": 300,
+                    "url": "https://mosaic.scdn.co/300/4f5ac6238a95971af895e78a2edfbfd25529c06e6a2bffbb188a7881b1e52ab46fea5bb78c5125f6702f2df495f45ac85a6513e90dc2e91247aee6f1d75fc8f64e83a4a5585bfb97fd6db51a943bdbf8",
+                    "width": 300
+                },
+                {
+                    "height": 60,
+                    "url": "https://mosaic.scdn.co/60/4f5ac6238a95971af895e78a2edfbfd25529c06e6a2bffbb188a7881b1e52ab46fea5bb78c5125f6702f2df495f45ac85a6513e90dc2e91247aee6f1d75fc8f64e83a4a5585bfb97fd6db51a943bdbf8",
+                    "width": 60
+                }
+            ],
+            "name": "Top Tracks",
+            "owner": {
+                "display_name": "Carter Robinson",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/12142278403"
+                },
+                "href": "https://api.spotify.com/v1/users/12142278403",
+                "id": "12142278403",
+                "type": "user",
+                "uri": "spotify:user:12142278403"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NTksNTA1NmEyZGYyNmM4M2U1YmU1YTZhYjVhMzdkMDNjOTBmMWY5OWMzMA==",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/71TGs0TQDL7bPhhSgQ5Oc0/tracks",
+                "total": 22
+            },
+            "type": "playlist",
+            "uri": "spotify:user:12142278403:playlist:71TGs0TQDL7bPhhSgQ5Oc0"
+        }
+    ],
+    "limit": 50,
+    "next": null,
+    "offset": 0,
+    "previous": null,
+    "total": 5
+}

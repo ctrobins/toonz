@@ -1,0 +1,21 @@
+{
+  "display_name": "Carter Robinson", 
+  "external_urls": {
+    "spotify": "https://open.spotify.com/user/12142278403"
+  }, 
+  "followers": {
+    "href": null, 
+    "total": 12
+  }, 
+  "href": "https://api.spotify.com/v1/users/12142278403", 
+  "id": "12142278403", 
+  "images": [
+    {
+      "height": null, 
+      "url": "https://scontent.xx.fbcdn.net/v/t1.0-1/p200x200/21752454_10155790035974973_3011344052233565659_n.jpg?_nc_cat=100&_nc_ht=scontent.xx&oh=187ce0c5ac072066eadd741baf645b24&oe=5C5B633D", 
+      "width": null
+    }
+  ], 
+  "type": "user", 
+  "uri": "spotify:user:12142278403"
+}
