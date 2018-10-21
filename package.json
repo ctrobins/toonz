@@ -7,11 +7,12 @@
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "2.0.5"
+    "react-scripts": "2.0.5",
+    "spotify-web-api-node": "^4.0.0"
   },
   "scripts": {
     "react-dev": "react-scripts start",
-    "start": "export FLASK_APP=server/server.py; flask run",
+    "start": "export FLASK_APP=server/server.py; export FLASK_DEBUG=1; flask run",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
