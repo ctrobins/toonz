@@ -5,19 +5,19 @@ class Playlist extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            string: ''
+            token: ''
         };
     }
 
     componentDidMount() {
       axios.get(`/api/data`)
         .then(res => res.data) 
-        .then(string => this.setState({ string }))
+        .then(token => this.setState({ token }))
         .catch(console.log);
     }
 
     render() {
-        return <h1>My Playlist:</h1>
+        return <h1>My Token: {this.state.string}</h1>
     }
 }
 
