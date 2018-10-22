@@ -6,6 +6,7 @@ import spotipy.util as util
 
 app = Flask(__name__, static_folder='../build/static', template_folder='../build')
 app.secret_key = 'RocketDollar'
+
 # Account for expiration of Spotify tokens
 app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=60)
 
@@ -39,6 +40,32 @@ def playlist_tracks():
     sp = spotipy.Spotify(session.get('token'))
     return jsonify(sp.user_playlist(username, playlist_id, fields="tracks,next"))
 
+@app.route('/api/addtoplaylist', methods=['POST'])
+def add_to_playlist():
+    sp = spotipy.Spotify(session.get('token'))
+    username = sp.current_user()['id']
+    playlist = request.json['playlist']
+    track = request.json['track']
+    jsonify(sp.user_playlist_add_tracks(username, playlist, [track]))
+    return 'track added'
+
+@app.route('/api/removefromplaylist', methods=['POST'])
+def remove_from_playlist():
+    sp = spotipy.Spotify(session.get('token'))
+    username = sp.current_user()['id']
+    playlist = request.json['playlist']
+    track = request.json['track']
+    jsonify(sp.user_playlist_remove_all_occurrences_of_tracks(username, playlist, [track]))
+    return 'track removed'
+
+@app.route('/api/create', methods=['POST'])
+def create_playlist():
+    sp = spotipy.Spotify(session.get('token'))
+    username = sp.current_user()['id']
+    name = request.json['name']
+    sp.user_playlist_create(username, name)
+    return 'New playlist created'
+
 @app.route('/api/userinfo')
 def user_info():
     sp = spotipy.Spotify(session.get('token'))
@@ -46,6 +73,7 @@ def user_info():
   
 @app.route('/login', methods=['POST'])
 def authenticate_user():
+    session.clear()
     username = request.json['username']
     session['username'] = username
     return util.prompt_for_user_token(username, 

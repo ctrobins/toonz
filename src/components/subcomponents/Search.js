@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { TextField } from '@material-ui/core/';
+import { Button, TextField } from '@material-ui/core/';
 
 class Search extends Component {
     constructor(props) {
@@ -10,9 +10,6 @@ class Search extends Component {
         };
         this.handleSearchClick = this.handleSearchClick.bind(this);
         this.handleSearchInput = this.handleSearchInput.bind(this);
-    }
-
-    componentDidMount() {
     }
     
     handleSearchClick() {
@@ -27,11 +24,11 @@ class Search extends Component {
     }
 
     render() {
-        return (<div style={{"backgroundColor": "white"}}>
-            <TextField value={this.state.query} onChange={this.handleSearchInput} type="text"/>
-            <button onClick={this.handleSearchClick}>
+        return (<div style={{"marginTop":"30px"}}>
+            <TextField style={{"backgroundColor": "white", "marginLeft":20}} value={this.state.query} onChange={this.handleSearchInput} placeholder="Find a song" type="text"/>
+            <span style={{"color":"white"}}><Button onClick={this.handleSearchClick} color="inherit">
              Search
-            </button></div>)
+            </Button></span></div>)
     }
 }
 
